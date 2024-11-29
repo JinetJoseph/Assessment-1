@@ -1,0 +1,169 @@
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8; /* Very light gray background */
+    color: #333;
+  }
+  
+  /* Main Heading */
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6C5B7B; /* Soft purple for the heading */
+    font-size: 34px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Navbar Styles */
+  nav {
+    background-color: #6C5B7B; /* Soft purple navbar */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 18px;
+    border-radius: 25px;
+    background-color: #A8DADC; /* Muted teal background for navbar links */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  nav a:hover {
+    background-color: #F1A7B1; /* Bright coral hover color */
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+  /* Home Page (Dashboard) Styles */
+  .container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 5px solid #F1A7B1; /* Bright coral accent on the left */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Card elevates on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    color: #6C5B7B; /* Soft purple text */
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #7D7D7D; /* Muted grey text */
+  }
+  
+  /* Add Blog Page Styles */
+  .form-container {
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #6C5B7B; /* Soft purple */
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #F1A7B1; /* Bright coral focus color */
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #F1A7B1; /* Bright coral button color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #6C5B7B; /* Soft purple button hover */
+    transform: translateY(-3px); /* Button lift effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+      margin: 10px 0;
+    }
+  
+    .form-container {
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  }
+  
